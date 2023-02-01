@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULÁRIO DE CADASTRO</title>
+</head>
+
+<style type="text/css">
+
+    .letra {
+    color: black;
+    font-family: "Arial";
+    font-size: 20px;
+    }
+
+    .button {
+    background-color: LightSkyBlue;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+</style>
+
+<body>
+
+     <form action = "/cadastrar" method = "POST">
+         <h1>Cadastrar Novo Cliente:</h1><br>
+         <b>Nome:</b><br>
+         <input type = "text" name = "nome" size="50" class="letra">
+         <br><br>
+         <b>Idade:</b><br>
+         <input type = "text" name = "idade" size="5" class="letra">
+         <br><br>
+         <b>Telefone:</b><br>
+         <input type = "text" name = "telefone" size="30" class="letra">
+         <br><br>
+         <b>Estado:</b><br>
+         <select name = "estado" class="letra">
+             <option></option>
+             {% for row in rows %}
+             <option>{{row["estado"]}}</option>
+            {% endfor %}
+         </select>
+         <br><br>
+
+         <input type = "submit" value = "Cadastrar" class="button"><br>
+      </form>
+     <br>
+     <h2>{{msg}}</h2>
+
+     <br>
+
+     <h2><a href = "\">Voltar para HOME</a></h2>
+     <br>
+     <h2><a href = "\listar">Ver Lista de Cadastrados</a></h2>
+
+</body>
+</html>
