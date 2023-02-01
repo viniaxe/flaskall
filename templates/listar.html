@@ -2,34 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LISTANDO CLIENTES</title>
+    <title>LISTANDO</title>
 </head>
 <body>
-    <h1>Listando todos os Clientes:</h1>
-      <table border = 1>
-         <thead>
-            <td width="50" bgcolor="yellow"><b>Id</b></td>
-            <td width="300" bgcolor="yellow"><b>Nome</b></td>
-            <td width="50" bgcolor="yellow"><b>Idade</b></td>
-            <td width="200" bgcolor="yellow"><b>Telefone</b></td>
-            <td width="200" bgcolor="yellow"><b>Estado</b></td>
-         </thead>
+    <h1>Listando:</h1>
 
-         {% for row in rows %}
-            <tr>
-               <td>{{row["id"]}}</td>
-               <td>{{row["nome"]}}</td>
-               <td>{{row["idade"]}}</td>
-               <td> {{row["telefone"]}}</td>
-                <td> {{row["estado"]}}</td>
-            </tr>
-         {% endfor %}
-      </table>
+        <br>
+        <h1>Vazio</h1>
+        <br>
 
-      <br><br>
-      <h2><a href = "\">Voltar para Home</a></h2>
-        <br><br>
-      <h2><a href = "\cadpage">Fazer um novo Cadastro</a></h2>
+        <h2><a href = "\">Voltar para Home</a></h2>
 
 
 </body>

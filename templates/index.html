@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <title>Página Inicial</title>
 </head>
-<body>
-    <h1> BEM VINDO AO TESTE DE CADASTRO FLASK!</h1>
-    <br>
-    <br>
-    <h2><a href = "\cadpage">Cadastrar Novo Cliente</a></h2>
-    <br>
-    <h2><a href = "\listar">Listar Clientes</a></h2>
 
+<style type="text/css">
+
+    .letra {
+    color: black;
+    font-family: "Arial";
+    font-size: 20px;
+    }
+
+    .button {
+    background-color: LightSkyBlue;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+</style>
+
+
+<body>
+    <h1>SIMPLES TESTE FLASK!</h1>
+    <br>
+    <br>
+    <form action = "/entrar" method = "POST">
+         <h1>Faça o Login:</h1><br>
+         <b>Nome:</b><br>
+         <input type = "text" name = "nome" size="50" class="letra">
+         <br><br>
+         <input type = "submit" value = "Entrar" class="button"><br>
+      </form>
 
 </body>
 </html>
